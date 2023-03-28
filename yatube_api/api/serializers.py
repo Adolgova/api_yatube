@@ -12,13 +12,13 @@ class PostSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Post
-        fields = Post.objects.all()
+        fields = '__all__'
 
 
 class GroupSerializer(serializers.ModelSerializer):
     class Meta:
         model = Group
-        fields = Group.objects.all()
+        fields = '__all__'
 
 
 class CommentSerializer(serializers.ModelSerializer):
@@ -28,7 +28,7 @@ class CommentSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Comment
-        fields = Comment.objects.all()
+        fields = '__all__'
 
 
 class UserSerializer(serializers.ModelSerializer):
@@ -36,4 +36,4 @@ class UserSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = User
-        fields = User.objects.all()
+        fields = '__all__'
